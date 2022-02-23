@@ -5,7 +5,7 @@ import django
 django.setup()
 from rango.models import Category, Page
 
-# For an explanation of what is going on here, please refer to the TwD book.
+
 
 def populate():
     python_pages = [
@@ -65,7 +65,6 @@ def add_cat(name, views=0, likes=0):
     c.save()
     return c
 
-# Start execution here!
 if __name__ == '__main__':
     print('Starting Rango population script...')
     populate()
